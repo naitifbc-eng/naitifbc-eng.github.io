@@ -31,24 +31,22 @@
     }
 
     .top-rule {
-      width: 200px;
-      height: 2px;
+      width: 100%;
+      height: 3px;
       background: #1A1810;
-      margin: 0 auto 40px;
-      opacity: 0;
-      animation: fadeUp 0.9s ease 0.1s forwards;
+      margin-bottom: 40px;
     }
 
     .wordmark {
       font-family: 'Playfair Display', Georgia, serif;
-      font-size: clamp(64px, 14vw, 100px);
+      font-size: clamp(52px, 12vw, 88px);
       font-weight: 400;
       letter-spacing: 0.14em;
       color: #1A1810;
       line-height: 1;
-      margin-bottom: 16px;
+      margin-bottom: 10px;
       opacity: 0;
-      animation: fadeUp 0.9s ease 0.3s forwards;
+      animation: fadeUp 0.9s ease 0.2s forwards;
     }
 
     .subtitle {
@@ -56,18 +54,18 @@
       letter-spacing: 0.22em;
       text-transform: uppercase;
       color: #888;
-      margin-bottom: 48px;
+      margin-bottom: 36px;
       opacity: 0;
-      animation: fadeUp 0.9s ease 0.5s forwards;
+      animation: fadeUp 0.9s ease 0.4s forwards;
     }
 
     .mid-rule {
       width: 40px;
       height: 1px;
       background: #C9A96E;
-      margin: 0 auto 32px;
+      margin: 0 auto 28px;
       opacity: 0;
-      animation: fadeUp 0.9s ease 0.6s forwards;
+      animation: fadeUp 0.9s ease 0.5s forwards;
     }
 
     .badge {
@@ -76,27 +74,56 @@
       color: #F5F0E8;
       font-size: 10px;
       font-weight: 600;
-      letter-spacing: 0.18em;
+      letter-spacing: 0.16em;
       text-transform: uppercase;
-      padding: 6px 18px;
+      padding: 5px 14px;
+      margin-bottom: 32px;
+      opacity: 0;
+      animation: fadeUp 0.9s ease 0.6s forwards;
+    }
+
+    .tagline {
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      color: #8B7355;
+      line-height: 2;
+      margin-bottom: 36px;
       opacity: 0;
       animation: fadeUp 0.9s ease 0.75s forwards;
     }
 
-    .bottom-rule {
-      width: 200px;
-      height: 1px;
-      background: #e8e8e8;
-      margin: 48px auto 20px;
+    .contact {
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      color: #888;
       opacity: 0;
       animation: fadeUp 0.9s ease 0.9s forwards;
+    }
+
+    .contact a {
+      color: #1A1810;
+      text-decoration: none;
+      border-bottom: 1px solid #C9A96E;
+      padding-bottom: 1px;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+
+    .contact a:hover { color: #8B7355; }
+
+    .bottom-rule {
+      width: 100%;
+      height: 1px;
+      background: #e8e8e8;
+      margin-top: 48px;
+      margin-bottom: 20px;
     }
 
     .footer {
       font-size: 9px;
       letter-spacing: 0.18em;
       text-transform: uppercase;
-      color: #ccc;
+      color: #bbb;
       opacity: 0;
       animation: fadeUp 0.9s ease 1.1s forwards;
     }
@@ -113,13 +140,30 @@
 </head>
 <body>
 <div class="container">
+
   <div class="top-rule"></div>
+
   <h1 class="wordmark">Naïtif</h1>
   <p class="subtitle">Laiterie &nbsp;·&nbsp; Coquitlam, BC</p>
+
   <div class="mid-rule"></div>
+
   <div class="badge">Coming Soon</div>
+
+  <p class="tagline">
+    Premium cold-processed Jersey milk<br>
+    24g native protein · Clean label · BC raised
+  </p>
+
+  <p class="contact">
+    Inquiries &nbsp;·&nbsp;
+    <a href="mailto:naitif.bc@gmail.com">naitif.bc@gmail.com</a>
+  </p>
+
   <div class="bottom-rule"></div>
+
   <p class="footer">Booth &amp; Moore · Maillardville · Est. 2026</p>
+
 </div>
 </body>
 </html>
